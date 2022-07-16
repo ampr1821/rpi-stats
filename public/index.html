@@ -4,11 +4,24 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>RPi Stats</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-	<div id="temp"></div>
-	<div id="cpu"></div>
-	<div id="ram"></div>
+	<div id="temp" class="gauge">
+		<div class="percentage"></div>
+	    <div class="mask"></div>
+	    <span id="temp_value" class="value"></span>
+	</div>
+	<div id="cpu" class="gauge">
+		<div class="percentage"></div>
+     	<div class="mask"></div>
+     	<span id="cpu_value" class="value"></span>
+	</div>
+	<div id="ram" class="gauge">
+		<div class="percentage"></div>
+     	<div class="mask"></div>
+     	<span id="ram_value" class="value"></span>
+	</div>
 	<script src="/socket.io/socket.io.js"></script>
 	<script src="index.js"></script>
 </body>
