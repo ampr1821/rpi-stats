@@ -7,20 +7,14 @@
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-	<div id="temp" class="gauge">
-		<div class="percentage"></div>
-	    <div class="mask"></div>
-	    <span id="temp_value" class="value"></span>
+	<div class="text" id="temp_">
+		Temp: <span id="temp"></span>
 	</div>
-	<div id="cpu" class="gauge">
-		<div class="percentage"></div>
-     	<div class="mask"></div>
-     	<span id="cpu_value" class="value"></span>
+	<div class="text" id="cpu_">
+		CPU: <span id="cpu"></span>
 	</div>
-	<div id="ram" class="gauge">
-		<div class="percentage"></div>
-     	<div class="mask"></div>
-     	<span id="ram_value" class="value"></span>
+	<div class="text" id="ram_">
+		RAM: <span id="ram"></span>
 	</div>
 	<script src="/socket.io/socket.io.js"></script>
 	<script src="index.js"></script>
