@@ -6,7 +6,7 @@ const server = http.createServer(app);
 const { Server } = require("socket.io");
 const { exec } = require("child_process");
 const io = new Server(server);
-const port = 8080;
+const port = 8081;
 let data = {'temp': 0, 'cpu': 0, 'ram': 0};
 
 function get_data() {
